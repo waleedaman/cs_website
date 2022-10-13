@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import Button from "./components/Button";
 import bg from "../public/final_logo.png";
+import Image from "next/image";
 function Nav() {
     const [isOpen, setIsOpen] = useState(false);
     return (
@@ -11,7 +12,7 @@ function Nav() {
                         <div className="flex w-full items-center">
                             <div className={'flex-1'}/>
                             <div className="flex p-1 flex-1 items-center justify-center flex-shrink-0">
-                                <img
+                                <Image
                                     className="h-[82px] w-[132px]"
                                     src={bg.src}
                                     alt="Workflow"
