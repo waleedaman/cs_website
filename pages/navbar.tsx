@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-import Button from "./components/Button.tsx";
+import Button from "./components/Button";
 import bg from "../public/final_logo.png";
 function Nav() {
     const [isOpen, setIsOpen] = useState(false);
