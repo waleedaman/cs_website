@@ -22,7 +22,7 @@ function Nav() {
                                     height={'82px'}
                                     width={'132px'}
                                     src={'final_logo.png'}
-                                    alt="Workflow"
+                                    alt="logo"
                                 />
                             </div>
                             <div className="flex justify-center flex-1 hidden md:block">
