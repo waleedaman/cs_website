@@ -21,7 +21,7 @@ function Nav() {
                                     loader={myLoader}
                                     height={'82px'}
                                     width={'132px'}
-                                    src={'final_logo.0801c300.png'}
+                                    src={'final_logo.png'}
                                     alt="Workflow"
                                 />
                             </div>
