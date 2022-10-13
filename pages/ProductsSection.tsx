@@ -9,7 +9,6 @@ export const RotateDiv = styled.div`
 `;
 
 function ProductsSection() {
-
     return (
         <div className={'grid grid-cols-6 w-full pt-20'} id="CategoriesSection">
             <div className={'relative h-full w-full p-2 flex col-span-1'}>
@@ -27,7 +26,7 @@ function ProductsSection() {
                 <div className={'card-container col-span-3 md:h-[300px] lg:h-[400px]'}>
                     <div className="card relative w-full h-full">
                         <a href="#">
-                            <div className="card--hover absolute -right-2 -bottom-2 bg-gold h-full w-full "></div>
+                            <div className="card--hover absolute -right-2 -bottom-2 bg-gold h-full w-full "/>
                             <div style={{
                                 backgroundImage: `url(${bed.src})`,
                                 width: '100%',
@@ -107,7 +106,6 @@ function ProductsSection() {
               .card-container .card a {
                 background: white;
                 text-decoration: none;
-                
               }
 
               .card-container .card a:hover {
