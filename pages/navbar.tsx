@@ -5,41 +5,42 @@ import bg from "../public/final_logo.png";
 function Nav() {
     const [isOpen, setIsOpen] = useState(false);
     return (
-            <nav className="bg-black/100 z-50 fixed top-0 left-0 right-0">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex items-center justify-between h-16">
+            <nav className="bg-black/60 bg-opacity-80 backdrop-blur-md z-50 fixed top-0 left-0 right-0">
+                <div className="mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex items-center justify-between h-20">
                         <div className="flex w-full items-center">
-                            <div className="flex-1 flex-shrink-0">
+                            <div className={'flex-1'}/>
+                            <div className="flex p-1 flex-1 items-center justify-center flex-shrink-0">
                                 <img
-                                    className="h-[70px] w-[107px]"
+                                    className="h-[82px] w-[132px]"
                                     src={bg.src}
                                     alt="Workflow"
                                 />
                             </div>
-                            <div className="flex flex-1 hidden md:block">
+                            <div className="flex justify-center flex-1 hidden md:block">
                                 <div className="flex justify-end items-baseline space-x-4">
                                     <Button>
                                         <a
-                                            href="#"
+                                            href={"#CategoriesSection"}
                                             className="text-sm font-medium text-gold"
                                         >
-                                            Link 1
+                                            Products
                                         </a>
                                     </Button>
                                     <Button>
                                         <a
-                                            href="#"
+                                            href={"#AboutSection"}
                                             className="text-sm font-medium text-gold"
                                         >
-                                            Link 2
+                                            About us
                                         </a>
                                     </Button>
                                     <Button>
                                         <a
-                                            href="#"
+                                            href={"#ContactSection"}
                                             className="text-sm font-medium text-gold"
                                         >
-                                            Link 3
+                                            Get in touch
                                         </a>
                                     </Button>
                                 </div>

@@ -7,8 +7,16 @@ module.exports = {
   theme: {
     extend: {
         colors: {
-          'gold': '#FFB200',
-          'brown': '#4A3636',
+            'gold': '#FFB200',
+            'brown': '#4A3636',
+            'BlueSapphire': '#2E6171',
+            'TaupeGray': '#8D8D92',
+            'LightGray': '#D7D6D6'
+        },
+        fontFamily: {
+            'merienda': ['Merienda'],
+            'pacifico': ['Pacifico'],
+            'neue-kabel': ['Neue Kabel']
         }
     },
   },

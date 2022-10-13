@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import styled from "@emotion/styled";
-import bg from "../public/background.jpg";
+import bed from "../public/bed.png";
+import bath from "../public/bath.png";
 
 export const RotateDiv = styled.div`
   transform: rotate(-90deg) translateX(-100%);
@@ -10,28 +11,32 @@ export const RotateDiv = styled.div`
 function ProductsSection() {
 
     return (
-        <div className={'grid grid-cols-6 w-full'}>
-            <div className={'h-full w-full p-4 bg-black col-span-1'}>
-                <RotateDiv className={'h-[400px] w-[300px]'}>
-                    <div className={'text-2xl text-brown'}>
+        <div className={'grid grid-cols-6 w-full pt-20'} id="CategoriesSection">
+            <div className={'relative h-full w-full p-2 flex col-span-1'}>
+                <div className={'flex flex-1 bg-gold text-center items-center h-full w-full'}>
+
+                </div>
+                <div className={'flex items-center top-0 left-0 h-full w-full z-20 backdrop-filter backdrop-blur-md bg-white bg-opacity-10 absolute'}>
+                    <div style={{ writingMode: 'vertical-rl' }} className={'flex flex-1 items-center w-full p-6 rotate-180 text-2xl text-brown'}>
                         Product Categories
                     </div>
-                </RotateDiv>
+                </div>
             </div>
+
             <div className={'p-6 gap-6 grid grid-cols-3 grid-rows-4 md:grid-cols-6 md:grid-rows-2 lg:grid-cols-12 lg:grid-rows-1 w-full h-full col-span-5'}>
                 <div className={'card-container col-span-3 md:h-[300px] lg:h-[400px]'}>
                     <div className="card relative w-full h-full">
                         <a href="#">
                             <div className="card--hover absolute -right-2 -bottom-2 bg-gold h-full w-full "></div>
                             <div style={{
-                                backgroundImage: `url(${bg.src})`,
+                                backgroundImage: `url(${bed.src})`,
                                 width: '100%',
                                 height: '100%',
                             }}
                                  className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                 <div className={'p-8'}>
                                     <div className="h-2 w-20 bg-gold"/>
-                                    <div className={'py-4 text-2xl font-bold text-brown'}>Category 1</div>
+                                    <div className={'py-4 text-2xl font-bold text-brown'}>Bed</div>
                                 </div>
                             </div>
                         </a>
@@ -42,14 +47,14 @@ function ProductsSection() {
                         <a href="#">
                             <div className="card--hover absolute -right-2 -bottom-2 bg-gold h-full w-full "></div>
                             <div style={{
-                                backgroundImage: `url(${bg.src})`,
+                                backgroundImage: `url(${bath.src})`,
                                 width: '100%',
                                 height: '100%',
                             }}
                                  className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                 <div className={'p-8'}>
                                     <div className="h-2 w-20 bg-gold"/>
-                                    <div className={'py-4 text-2xl font-bold text-brown'}>Category 2</div>
+                                    <div className={'py-4 text-2xl font-bold text-brown'}>Bath</div>
                                 </div>
                             </div>
                         </a>
@@ -60,14 +65,14 @@ function ProductsSection() {
                         <a href="#">
                             <div className="card--hover absolute -right-2 -bottom-2 bg-gold h-full w-full "></div>
                             <div style={{
-                                backgroundImage: `url(${bg.src})`,
+                                backgroundImage: `url(${bed.src})`,
                                 width: '100%',
                                 height: '100%',
                             }}
                                  className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                 <div className={'p-8'}>
                                     <div className="h-2 w-20 bg-gold"/>
-                                    <div className={'py-4 text-2xl font-bold text-brown'}>Category 3</div>
+                                    <div className={'py-4 text-2xl font-bold text-brown'}>F&B Items</div>
                                 </div>
                             </div>
                         </a>
@@ -78,14 +83,14 @@ function ProductsSection() {
                         <a href="#">
                             <div className="card--hover absolute -right-2 -bottom-2 bg-gold h-full w-full "></div>
                             <div style={{
-                                backgroundImage: `url(${bg.src})`,
+                                backgroundImage: `url(${bed.src})`,
                                 width: '100%',
                                 height: '100%',
                             }}
                                  className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                 <div className={'p-8'}>
                                     <div className="h-2 w-20 bg-gold"/>
-                                    <div className={'py-4 text-2xl font-bold text-brown'}>Category 4</div>
+                                    <div className={'py-4 text-2xl font-bold text-brown'}>Uniforms</div>
                                 </div>
                             </div>
                         </a>

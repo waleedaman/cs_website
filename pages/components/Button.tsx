@@ -17,7 +17,7 @@ function Button(props) {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background: #060c21;
+                    background: #ffffff00;
                     z-index: 1;
                   }
 
@@ -28,7 +28,7 @@ function Button(props) {
                     left: -2px;
                     bottom: -2px;
                     right: -2px;
-                    background: #fff;
+                    background: #ffffff00;
                     z-index: -2;
                   }
 
@@ -39,13 +39,13 @@ function Button(props) {
                     left: -2px;
                     bottom: -2px;
                     right: -2px;
-                    background: #fff;
+                    background: #ffffff00;
                     z-index: -3;
                     filter: blur(40px);
                   }
 
                   .box:hover:before, .box:hover:after {
-                    background: linear-gradient(235deg, #FFB200, #FFB255);
+                    background: linear-gradient(235deg, #FFB20060, #FFB25540);
                   }
 
                   .box {
@@ -56,15 +56,15 @@ function Button(props) {
                     transform: scale(1.1);
                   }
 
-                  .box:before, .box:after {
-                    background: linear-gradient(235deg, #FFB200, #060c21, #FFB255);
-                  }
+                  //.box:before, .box:after {
+                  //  background: linear-gradient(235deg, #FFB200, #ffffffa0, #FFB255);
+                  //}
 
                   .content {
                     padding: 6px;
                     box-sizing: border-box;
                     color: #fff;
-                    background: #060c21;
+                    background: #ffffff00;
                     width: 100%;
                     height: 100%;
                     display: flex;

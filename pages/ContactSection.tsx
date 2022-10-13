@@ -1,14 +1,14 @@
 import React, {useState} from "react";
 import bg from "../public/background.jpg";
-import InstagramIcon from "./Icons/InstagramIcon.tsx";
-import FacebookIcon from "./Icons/FacebookIcon.tsx";
-import TwitterIcon from "./Icons/TwitterIcon.tsx";
-import DownArrow from "./Icons/DownArrow.tsx";
+import InstagramIcon from "./Icons/InstagramIcon";
+import FacebookIcon from "./Icons/FacebookIcon";
+import TwitterIcon from "./Icons/TwitterIcon";
+import DownArrow from "./Icons/DownArrow";
 import styled from "@emotion/styled";
 import Button from "./components/Button";
 function ContactSection(){
     return(
-        <div className="bg-brown text-gold px-8 py-12">
+        <div className="bg-brown text-gold px-8 py-12" id="ContactSection">
         <div
             className="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
             <div className="flex flex-col justify-between">
