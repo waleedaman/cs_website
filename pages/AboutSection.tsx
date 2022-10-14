@@ -19,8 +19,8 @@ function AboutSection(){
                         <div className={"bg-gold h-0.5 w-8 mx-2"}></div>
                         <div className={'text-2xl font-bold text-gold'}>About Us</div>
                     </div>
-                    <div className={'ml-12 text-sm text-brown'}>We "CS Textiles" introduce ourselves as a leading Suppliers for Hotels, Resorts, Hospitals & Corporate Sectors and have best sources of manufacturing hospitality textile.
-                        Our products includes massive range of Bath Linen, Bed Linen, Table Linen as well as Hotel amenities. We are ready to assis you for any linen order, under the supervision of well experienced Hospitality experts.
+                    <div className={'ml-12 text-sm text-brown'}>We &lsquo;CS Textiles introduce&rsquo; introduce ourselves as a leading Supplier for Hotels, Resorts, Hospitals & Corporate Sector and have best sources of manufacturing hospitality textile.
+                        Our products includes massive range of Bath Linen, Bed Linen, Table Linen as well as Hotel amenities. We are ready to assist you for any linen order, under the supervision of well experienced Hospitality experts.
                         Our mission is to provide the highest value services by providing premier quality goods at most reasonable price. If you have any inquiry please don’t hesitate to call at the number listed, our team will be happy to offer assistance.</div>
                     </div>
                 </div>

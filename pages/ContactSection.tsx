@@ -37,7 +37,7 @@ function ContactSection(){
                 <div className="mt-8">
                     <span className="uppercase text-sm text-brown/80 font-bold">Message</span>
                     <textarea
-                        className="w-full h-32 bg-gold/25 text-brown mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+    className="w-full h-32 bg-gold/25 text-brown mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"/>
                 </div>
                 <div className="mt-8">
                     <Button>
