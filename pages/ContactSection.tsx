@@ -6,7 +6,28 @@ import TwitterIcon from "./Icons/TwitterIcon";
 import DownArrow from "./Icons/DownArrow";
 import styled from "@emotion/styled";
 import Button from "./components/Button";
+import emailjs from 'emailjs-com';
+import {BounceLoader} from "react-spinners";
+
+
 function ContactSection(){
+    const [isLoading, setIsLoading] = useState(false);
+    const [errorSendingMail, setErrorSendingMail] = useState(false);
+    function sendEmail(e) {
+        setIsLoading(true)
+        setErrorSendingMail(false)
+        e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
+        emailjs.sendForm('service_mxtxebt', 'template_hk63m64', e.target, 'wIXgWqAGSRBd1yTUo')
+            .then((result) => {
+                let form:HTMLFormElement = document.getElementById("form") as HTMLFormElement;
+                setIsLoading(false)
+                form.reset();
+            }, (error) => {
+                console.log(error.text);
+                setIsLoading(false);
+                setErrorSendingMail(true)
+            });
+    }
     return(
         <div className="bg-Beige text-gold px-8 py-12" id="ContactSection">
         <div
@@ -23,29 +44,36 @@ function ContactSection(){
                     </div>
                 </div>
             </div>
-            <div className="">
+            <form id="form" onSubmit={sendEmail} className="">
                 <div>
                     <span className="uppercase text-sm text-brown/80 font-bold">Full Name</span>
                     <input className="w-full bg-gold/25 text-brown mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                           type="text" placeholder=""/>
+                           type="text" name={"from_name"} placeholder=""/>
                 </div>
                 <div className="mt-8">
                     <span className="uppercase text-sm text-brown/80 font-bold">Email</span>
                     <input className="w-full bg-gold/25 text-brown mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                           type="text"/>
+                           type="text"
+                            name={"from_email"}
+                    />
                 </div>
                 <div className="mt-8">
                     <span className="uppercase text-sm text-brown/80 font-bold">Message</span>
                     <textarea
-    className="w-full h-32 bg-gold/25 text-brown mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"/>
+                        className="w-full h-32 bg-gold/25 text-brown mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                        name={"message"}
+                    />
                 </div>
                 <div className="mt-8">
                     <Button>
-                        <span className={'text-gold'}>Send Message</span>
+                        <input type="submit" className={errorSendingMail ? 'text-error' : 'text-gold'} value={errorSendingMail ? "Could not send mail" : "Send Message"}/>
+                        &nbsp;&nbsp;<BounceLoader size={24} id={'loader'} loading={isLoading} color="#E0A83F" />
                     </Button>
                 </div>
-            </div>
+            </form>
+
         </div>
+
         </div>
 )
 }
