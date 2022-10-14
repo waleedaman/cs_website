@@ -7,11 +7,14 @@ module.exports = {
   theme: {
     extend: {
         colors: {
-            'gold': '#FFB200',
+            'gold': '#E0A83F',
+            'cream':'#FAF7F0',
             'brown': '#4A3636',
             'BlueSapphire': '#2E6171',
             'TaupeGray': '#8D8D92',
-            'LightGray': '#D7D6D6'
+            'LightGray': '#D7D6D6',
+            'Beige': '#D0B8A8',
+            'Earth': '#7D6E83'
         },
         fontFamily: {
             'merienda': ['Merienda'],

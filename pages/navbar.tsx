@@ -21,7 +21,7 @@ function Nav() {
                                     loader={myLoader}
                                     height={'82px'}
                                     width={'132px'}
-                                    src={'final_logo.png'}
+                                    src={'logo.svg'}
                                     alt="logo"
                                 />
                             </div>

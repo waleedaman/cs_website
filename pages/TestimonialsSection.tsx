@@ -3,6 +3,9 @@ import styled from "@emotion/styled";
 import bg from "../public/background.jpg";
 import bed from "../public/bed.png";
 import bath from "../public/bath.png";
+import hotel from "../public/hotel.jpg";
+import hospital from "../public/hospital.png";
+import customer from "../public/customers.png";
 
 function TestimonialsSection() {
     return (
@@ -24,9 +27,10 @@ function TestimonialsSection() {
                                 <a href="#">
                                     <div className="card--hover absolute -right-2 -bottom-2 bg-gold h-full w-full "></div>
                                     <div style={{
-                                        backgroundImage: `url(${bed.src})`,
+                                        backgroundImage: `url(${hotel.src})`,
                                         width: '100%',
                                         height: '100%',
+                                        backgroundSize:'cover'
                                     }}
                                          className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                         <div className={'p-8'}>
@@ -42,9 +46,10 @@ function TestimonialsSection() {
                                 <a href="#">
                                     <div className="card--hover absolute -right-2 -bottom-2 bg-gold h-full w-full "></div>
                                     <div style={{
-                                        backgroundImage: `url(${bath.src})`,
+                                        backgroundImage: `url(${hospital.src})`,
                                         width: '100%',
                                         height: '100%',
+                                        backgroundSize:'cover'
                                     }}
                                          className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                         <div className={'p-8'}>
@@ -60,14 +65,15 @@ function TestimonialsSection() {
                                 <a href="#">
                                     <div className="card--hover absolute -right-2 -bottom-2 bg-gold h-full w-full "></div>
                                     <div style={{
-                                        backgroundImage: `url(${bed.src})`,
+                                        backgroundImage: `url(${customer.src})`,
                                         width: '100%',
                                         height: '100%',
+                                        backgroundSize:'cover'
                                     }}
                                          className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                         <div className={'p-8'}>
                                             <div className="h-2 w-20 bg-gold"/>
-                                            <div className={'py-4 text-2xl overflow-clip font-bold text-brown'}>Commercial</div>
+                                            <div className={'py-4 text-2xl overflow-clip font-bold text-brown'}>Private customers</div>
                                         </div>
                                     </div>
                                 </a>

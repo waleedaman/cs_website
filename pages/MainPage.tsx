@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import bg from "../public/img.png";
+import bg from "../public/img_3.png";
 import InstagramIcon from "./Icons/InstagramIcon";
 import FacebookIcon from "./Icons/FacebookIcon";
 import TwitterIcon from "./Icons/TwitterIcon";
@@ -58,15 +58,19 @@ function MainPage() {
                         </div>
                     </RotateDiv>
                 </div>
-                <div className={'grid col-span-4 pr-24 place-items-center md:pl-24 md:pt-24'}>
-                    <div className={'mt-[200px] w-full inline-flex justify-end items-center'}>
-                        <div className={"bg-gold h-0.5 w-8 mr-2"}></div>
-                        <div className={'text-gold font-pacifico font-regular text-2xl'}>The New Generation Luxury Textiles</div>
+                <div className={'grid col-start-4 col-span-2 mr-2 place-items-center md:ml-2 md:mt-24'}>
+                        <div className={"bg-white bg-opacity-20 backdrop-blur-md"}>
+                            <div className={'w-full inline-flex justify-end items-center'}>
+                                <div className={"bg-gold h-0.5 w-8 mr-2"}></div>
+                                <div className={'text-gold font-pacifico font-regular text-2xl'}>The New Generation Luxury Textiles</div>
+                            </div>
+                            <div className={'mt-[10px] w-full flex flex-col justify-center items-end'}>
+                                <div className={'font-merienda text-brown w-max font-bold text-4xl'}>CS Textiles</div>
+                                <div className={'text-TaupeGray w-max font-regular text-md'}>Striving to uplift your services by providing premium luxury textiles</div>
+                            </div>
                     </div>
-                    <div className={'mt-[10px] w-full flex flex-col justify-center items-end'}>
-                        <div className={'font-merienda text-brown w-max font-bold text-4xl'}>CS Textiles</div>
-                        <div className={'text-TaupeGray w-max font-regular text-md'}>Striving to uplift your services by providing premium luxury textiles</div>
-                    </div>
+
+
                 </div>
             </div>
             <div className={'flex p-8 w-full justify-center content-center mt-auto p-24'}>

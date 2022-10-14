@@ -8,7 +8,7 @@ import styled from "@emotion/styled";
 import Button from "./components/Button";
 function ContactSection(){
     return(
-        <div className="bg-brown text-gold px-8 py-12" id="ContactSection">
+        <div className="bg-Beige text-gold px-8 py-12" id="ContactSection">
         <div
             className="max-w-screen-xl mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
             <div className="flex flex-col justify-between">
@@ -19,7 +19,7 @@ function ContactSection(){
                     </div>
 
                     <div className="ml-12 text-brown mt-8">
-                        You can also email us at <span className="underline">addr@xyz.com</span> instead.
+                        You can also email us at <span className="underline"><a target={'_blank'} href={"mailto:info@cs-textiles.de?subject=Mail from our Website"} rel="noreferrer">info@cs-textiles.de</a></span> instead.
                     </div>
                 </div>
             </div>

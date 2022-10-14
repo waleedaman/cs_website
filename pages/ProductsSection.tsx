@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import styled from "@emotion/styled";
 import bed from "../public/bed.png";
 import bath from "../public/bath.png";
+import fnb from "../public/fnb.png";
+import uniform from "../public/uniform.jpeg";
 
 export const RotateDiv = styled.div`
   transform: rotate(-90deg) translateX(-100%);
@@ -31,6 +33,7 @@ function ProductsSection() {
                                 backgroundImage: `url(${bed.src})`,
                                 width: '100%',
                                 height: '100%',
+                                backgroundSize:'cover'
                             }}
                                  className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                 <div className={'p-8'}>
@@ -49,6 +52,7 @@ function ProductsSection() {
                                 backgroundImage: `url(${bath.src})`,
                                 width: '100%',
                                 height: '100%',
+                                backgroundSize:'cover'
                             }}
                                  className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                 <div className={'p-8'}>
@@ -64,9 +68,10 @@ function ProductsSection() {
                         <a href="#">
                             <div className="card--hover absolute -right-2 -bottom-2 bg-gold h-full w-full "></div>
                             <div style={{
-                                backgroundImage: `url(${bed.src})`,
+                                backgroundImage: `url(${fnb.src})`,
                                 width: '100%',
                                 height: '100%',
+                                backgroundSize:'cover'
                             }}
                                  className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                 <div className={'p-8'}>
@@ -82,9 +87,10 @@ function ProductsSection() {
                         <a href="#">
                             <div className="card--hover absolute -right-2 -bottom-2 bg-gold h-full w-full "></div>
                             <div style={{
-                                backgroundImage: `url(${bed.src})`,
+                                backgroundImage: `url(${uniform.src})`,
                                 width: '100%',
                                 height: '100%',
+                                backgroundSize:'cover'
                             }}
                                  className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                 <div className={'p-8'}>
