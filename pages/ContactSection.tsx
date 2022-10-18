@@ -1,10 +1,4 @@
 import React, {useState} from "react";
-import bg from "../public/background.jpg";
-import InstagramIcon from "./Icons/InstagramIcon";
-import FacebookIcon from "./Icons/FacebookIcon";
-import TwitterIcon from "./Icons/TwitterIcon";
-import DownArrow from "./Icons/DownArrow";
-import styled from "@emotion/styled";
 import Button from "./components/Button";
 import emailjs from 'emailjs-com';
 import {BounceLoader} from "react-spinners";

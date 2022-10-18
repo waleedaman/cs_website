@@ -1,10 +1,6 @@
 import React, {useState} from "react";
-import styled from "@emotion/styled";
-import bg from "../public/background.jpg";
-import bed from "../public/bed.png";
-import bath from "../public/bath.png";
-import hotel from "../public/hotel.jpg";
-import hospital from "../public/hospital.png";
+import hotel from "../public/hotel.jpeg";
+import hospital from "../public/hospital.jpeg";
 import customer from "../public/customers.png";
 
 function TestimonialsSection() {
@@ -30,7 +26,10 @@ function TestimonialsSection() {
                                         backgroundImage: `url(${hotel.src})`,
                                         width: '100%',
                                         height: '100%',
-                                        backgroundSize:'cover'
+                                        backgroundPosition: 'center',
+                                        backgroundSize:'cover',
+                                        position: 'relative',
+                                        backgroundRepeat: 'no-repeat'
                                     }}
                                          className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                         <div className={'p-8'}>
@@ -49,7 +48,10 @@ function TestimonialsSection() {
                                         backgroundImage: `url(${hospital.src})`,
                                         width: '100%',
                                         height: '100%',
-                                        backgroundSize:'cover'
+                                        backgroundPosition: 'center',
+                                        backgroundSize:'cover',
+                                        position: 'relative',
+                                        backgroundRepeat: 'no-repeat'
                                     }}
                                          className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                         <div className={'p-8'}>
@@ -68,7 +70,10 @@ function TestimonialsSection() {
                                         backgroundImage: `url(${customer.src})`,
                                         width: '100%',
                                         height: '100%',
-                                        backgroundSize:'cover'
+                                        backgroundPosition: 'center',
+                                        backgroundSize:'cover',
+                                        position: 'relative',
+                                        backgroundRepeat: 'no-repeat'
                                     }}
                                          className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                         <div className={'p-8'}>

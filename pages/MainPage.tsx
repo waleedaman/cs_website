@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import bg from "../public/img_3.png";
+import bg from "../public/bg.jpeg";
 import InstagramIcon from "./Icons/InstagramIcon";
 import FacebookIcon from "./Icons/FacebookIcon";
 import TwitterIcon from "./Icons/TwitterIcon";
@@ -20,6 +20,10 @@ function MainPage() {
                  backgroundImage: `url(${bg.src})`,
                  width: '100%',
                  height: '100%',
+                 backgroundPosition: 'center',
+                 backgroundSize:'cover',
+                 position: 'relative',
+                 backgroundRepeat: 'no-repeat'
              }}>
             <div className={'grid grid-cols-6 p-2 mt-24'}>
                 <div className={'col-span-2'}>
@@ -59,7 +63,7 @@ function MainPage() {
                     </RotateDiv>
                 </div>
                 <div className={'grid col-start-4 col-span-2 mr-2 place-items-center md:ml-2 md:mt-24'}>
-                        <div className={"bg-white bg-opacity-20 backdrop-blur-md"}>
+                        <div className={"bg-transparent"}>
                             <div className={'w-full inline-flex justify-end items-center'}>
                                 <div className={"bg-gold h-0.5 w-8 mr-2"}></div>
                                 <div className={'text-gold font-pacifico font-regular text-2xl'}>The New Generation Luxury Textiles</div>

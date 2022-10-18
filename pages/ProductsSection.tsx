@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import styled from "@emotion/styled";
-import bed from "../public/bed.png";
-import bath from "../public/bath.png";
-import fnb from "../public/fnb.png";
+import bed from "../public/bed.jpeg";
+import bath from "../public/bath.jpeg";
+import fnb from "../public/fnb.jpeg";
 import uniform from "../public/uniform.jpeg";
 
 export const RotateDiv = styled.div`
@@ -25,7 +25,7 @@ function ProductsSection() {
             </div>
 
             <div className={'p-6 gap-6 grid grid-cols-3 grid-rows-4 md:grid-cols-6 md:grid-rows-2 lg:grid-cols-12 lg:grid-rows-1 w-full h-full col-span-5'}>
-                <div className={'card-container col-span-3 md:h-[300px] lg:h-[400px]'}>
+                <div className={'card-container col-span-3 min-h-[300px]'}>
                     <div className="card relative w-full h-full">
                         <a href="#">
                             <div className="card--hover absolute -right-2 -bottom-2 bg-gold h-full w-full "/>
@@ -33,7 +33,10 @@ function ProductsSection() {
                                 backgroundImage: `url(${bed.src})`,
                                 width: '100%',
                                 height: '100%',
-                                backgroundSize:'cover'
+                                backgroundPosition: 'center',
+                                backgroundSize:'cover',
+                                position: 'relative',
+                                backgroundRepeat: 'no-repeat'
                             }}
                                  className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                 <div className={'p-8'}>
@@ -44,7 +47,7 @@ function ProductsSection() {
                         </a>
                     </div>
                 </div>
-                <div className={'card-container col-span-3'}>
+                <div className={'card-container col-span-3 min-h-[300px]'}>
                     <div className="card relative w-full h-full">
                         <a href="#">
                             <div className="card--hover absolute -right-2 -bottom-2 bg-gold h-full w-full "></div>
@@ -52,7 +55,10 @@ function ProductsSection() {
                                 backgroundImage: `url(${bath.src})`,
                                 width: '100%',
                                 height: '100%',
-                                backgroundSize:'cover'
+                                backgroundPosition: 'center',
+                                backgroundSize:'cover',
+                                position: 'relative',
+                                backgroundRepeat: 'no-repeat'
                             }}
                                  className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                 <div className={'p-8'}>
@@ -63,7 +69,7 @@ function ProductsSection() {
                         </a>
                     </div>
                 </div>
-                <div className={'card-container col-span-3'}>
+                <div className={'card-container col-span-3 min-h-[300px]'}>
                     <div className="card relative w-full h-full">
                         <a href="#">
                             <div className="card--hover absolute -right-2 -bottom-2 bg-gold h-full w-full "></div>
@@ -71,7 +77,10 @@ function ProductsSection() {
                                 backgroundImage: `url(${fnb.src})`,
                                 width: '100%',
                                 height: '100%',
-                                backgroundSize:'cover'
+                                backgroundPosition: 'center',
+                                backgroundSize:'cover',
+                                position: 'relative',
+                                backgroundRepeat: 'no-repeat'
                             }}
                                  className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                 <div className={'p-8'}>
@@ -82,7 +91,7 @@ function ProductsSection() {
                         </a>
                     </div>
                 </div>
-                <div className={'card-container col-span-3'}>
+                <div className={'card-container col-span-3 min-h-[300px]'}>
                     <div className="card relative w-full h-full">
                         <a href="#">
                             <div className="card--hover absolute -right-2 -bottom-2 bg-gold h-full w-full "></div>
@@ -90,7 +99,10 @@ function ProductsSection() {
                                 backgroundImage: `url(${uniform.src})`,
                                 width: '100%',
                                 height: '100%',
-                                backgroundSize:'cover'
+                                backgroundPosition: 'center',
+                                backgroundSize:'cover',
+                                position: 'relative',
+                                backgroundRepeat: 'no-repeat'
                             }}
                                  className="card--display flex flex-col relative bg-gray-600 text-gray-50 space-y-6 border-4 border-white-700">
                                 <div className={'p-8'}>
