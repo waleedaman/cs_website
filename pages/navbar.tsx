@@ -29,6 +29,14 @@ function Nav() {
                                 <div className="flex justify-end items-baseline space-x-4">
                                     <Button>
                                         <a
+                                            href={"#BrandSection"}
+                                            className="text-sm font-medium text-gold"
+                                        >
+                                            Our Brand
+                                        </a>
+                                    </Button>
+                                    <Button>
+                                        <a
                                             href={"#CategoriesSection"}
                                             className="text-sm font-medium text-gold"
                                         >
